@@ -87,6 +87,110 @@
             height: 550px;
             margin-bottom: 100px;
             border-radius: 50px;
+            position: relative;
+            display: flex;
+        }
+
+        .box .left-side,
+        .box .right-side {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .left-side {
+            left: 0;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-side img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 20px;
+        }
+
+        .right-side {
+            right: 0;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            color: black;
+            text-align: left;
+        }
+
+        .right-side h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .heading1 {
+            margin-left: 50px;
+        }
+
+        .heading3 {
+            margin-left: 200px;
+        }
+
+        .right-side p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .box .left-side2,
+        .box .right-side2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+
+        .right-side2 {
+            left: 0;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            color: black;
+            text-align: left;
+        }
+
+        .left-side2 {
+            right: 0;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-side2 img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 20px;
+        }
+
+        .left-side2 h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .left-side2 p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .heading2 {
+            margin-left: 50px;
+        }
+
+        .heading4 {
+            margin-left: 50px;
         }
 
         .box1 {
@@ -123,10 +227,46 @@
     </header>
 
     <div class="box-container">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
-        <div class="box box4"></div>
+        <div class="box box1">
+            <div class="left-side">
+                <a href="#"><img src="your-image-link1.jpg" alt="Image 1"></a>
+            </div>
+            <div class="right-side">
+                <h2 class="heading1">The World’s Best AI Tools Directory</h2>
+                <p>Aixploria is a website dedicated to artificial intelligence that allows you to discover the <b>best AI tools directory available online.</b> Our site features a selection of listings arranged in categories that make it easy for you to find AIs that meet your criteria. In fact, the largest list of sites using AI can be found on this page! Plus, this list is updated daily, so you can bookmark it so you don’t miss out on the latest news.</p>
+                <p>Lately, the site also posts articles that explain how each AI works. Found an AI tools that doesn’t appear in the list? From now on, it is possible to submit new AIs so that they can be added to the ranking or the top 10. Actually, Aixploria is a kind of directory and search engine dedicated to AI. With its simple and clean style, you easily search using keywords like on a search engine</p>
+            </div>
+        </div>
+        <div class="box box2">
+            <div class="right-side2">
+                <h2 class="heading2">Aixploria: your guide to discovering the best AI</h2>
+                <p>Other than that, the site is neat and clear, with good ergonomics to ensure you get quick results. Obviously, the site is accessible for free, without registration and is compatible with computers, tablets and mobiles.</p>
+                <p>Whether you’re looking for a machine translation tool, an image generator, or any other AI app, Aixploria offers a variety of high-quality choices. With our intuitive search engine, you can easily find the right AI for your needs. Now, we also have articles written by AI experts to help you understand the latest trends and most popular applications.</p>
+            </div>
+            <div class="left-side2">
+                <a href="#"><img src="your-image-link2.jpg" alt="Image 2"></a>
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="left-side">
+                <a href="#"><img src="your-image-link3.jpg" alt="Image 3"></a>
+            </div>
+            <div class="right-side">
+                <h2 class="heading3">Top 10 best AI</h2>
+                <p>Meanwhile, a new special section called « top 10 AI » has been created. This one updates in real time and allows you to see the top 10 AI in each category at a glance. It’s very useful, because it’s sometimes hard to find your way around, with so many new AI tools coming out every day. As a result, the AI tool directory quickly becomes unreadable, and this option becomes essential.</p>
+                <p>With great patience, we have carefully selected the most innovative and useful AIs to offer you the best options available. By the way on this subject, you can check our “top 10” list in the tab (of the same name) at the top of this page.</p>
+            </div>
+        </div>
+        <div class="box box4">
+            <div class="right-side2">
+                <h2 class="heading4">A website for all AI enthusiasts and aficionados</h2>
+                <p>As already mentioned, our platform is easy to use and designed for AI enthusiasts. Whether you are a beginner or an expert in the field, you will find something useful here. We strive to provide up-to-date information and the best tools to help you succeed in your AI endeavors.</p>
+                <p>If you want to stay informed about the latest AI trends, don’t forget to check our blog section where we regularly post articles about new developments in the AI world. Join our community of AI enthusiasts and take your first step towards mastering the technology of the future.</p>
+            </div>
+            <div class="left-side2">
+                <a href="#"><img src="your-image-link4.jpg" alt="Image 4"></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
