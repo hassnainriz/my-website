@@ -88,6 +88,165 @@
 
 
 
+        
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the entire section horizontally */
+            margin-top: 20px; /* Adjust the top margin as needed */
+            text-align: center;
+        }
+
+        .heading-container {
+            display: flex;
+            align-items: center; /* Center the image and heading vertically */
+        }
+
+        .heading-container img {
+            height: 70px; /* Adjust the image height as needed */
+            margin-right: 10px; /* Space between image and heading */
+        }
+
+        .heading-container h1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, helvetica neue, Arial, sans-serif;
+            background: linear-gradient(to right, rgb(0, 0, 87), black 40%, rgb(0, 0, 90));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            
+        }
+
+        .heading-container h1::after {
+            content: '';
+            display: block;
+            width: 100%; /* Full width of the heading */
+            height: 2px; /* Thickness of the underline */
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow gradient */
+            margin-top: 5px; /* Space between text and underline */
+        }
+
+        .description p {
+            margin-top: 2px;
+            font-size: 20px;
+        }
+
+
+
+
+
+
+
+        .first-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centers all elements horizontally */
+            margin-top: 20px;
+            gap: 80px; /* Adds spacing between elements */
+        }
+
+        .search-box {
+            height: 15px;
+            width: 250px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            padding: 10px 15px;
+            border: 2px solid #ccc;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #eee;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .search-button img {
+            height: 15px;
+        }
+
+        .search-button:hover {
+            background-color: #ddd;
+        }
+
+        .media-icons img {
+            height: 18px; /* Adjust icon size */
+            margin: 0 4px; /* Adjust spacing between icons */
+            cursor: pointer;
+        }
+
+        .categories-options {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 270px; /* Adjust width as needed */
+        }
+
+        .categories-options:focus {
+            outline: none;
+            border-color: #888;
+        }
+
+
+
+
+
+
+
+        .icon-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px 0; /* Adjust the top and bottom margin as needed */
+        }
+
+        .icon-heading {
+            margin-right: 20px;
+            font-size: 18px;
+            font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+            text-decoration: none;
+            color: rgb(79, 79, 187);
+        }
+
+        .icon-heading:hover {
+            color: rgb(79, 162, 187);
+        }
+
+        .icons {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 800px;
+            position: relative;
+        }
+
+        .icons-slide {
+            display: inline-block;
+            animation: 10s slide infinite linear;
+        }
+
+        .icons-slide img {
+            height: 50px;
+            margin: 0 30px;
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+
+
+
+
+
 
         .box-container {
             display: flex;
@@ -233,93 +392,7 @@
 
 
 
-
-
-
-
-        .top-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Center the entire section horizontally */
-            margin-top: 20px; /* Adjust the top margin as needed */
-            text-align: center;
-        }
-
-        .heading-container {
-            display: flex;
-            align-items: center; /* Center the image and heading vertically */
-        }
-
-        .heading-container img {
-            height: 70px; /* Adjust the image height as needed */
-            margin-right: 10px; /* Space between image and heading */
-        }
-
-        .heading-container h1 {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, helvetica neue, Arial, sans-serif;
-            background: linear-gradient(to right, rgb(0, 0, 87), black 40%, rgb(0, 0, 90));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
-            
-        }
-
-        .heading-container h1::after {
-            content: '';
-            display: block;
-            width: 100%; /* Full width of the heading */
-            height: 2px; /* Thickness of the underline */
-            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow gradient */
-            margin-top: 5px; /* Space between text and underline */
-        }
-
-        .description p {
-            margin-top: 2px;
-            font-size: 20px;
-        }
-
-
-        .icon-section {
-            text-align: center;
-            margin: 50px 0; /* Adjust the top and bottom margin as needed */
-        }
-
-        .icon-heading {
-            display: inline-block;
-            margin-right: 20px;
-            font-size: 18px;
-            font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-            text-decoration: none;
-            color: rgb(79, 79, 187);
-        }
-
-        .icon-heading:hover {
-            color: rgb(79, 162, 187);
-        }
-
-        .icon-section .icon-container {
-            display: inline-flex;
-            width: 800px;
-            gap: 30px;
-            overflow: hidden;
-            vertical-align: middle; /* Aligns icons with the heading */
-        }
-
-        .icon-section .icon {
-            width: 100%;
-            height: 40px;
-            animation: slide 5s linear infinite;
-        }
-
-        @keyframes slide {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
+        
 
         .box1 {
             background-color: #f8f5ff;
@@ -390,22 +463,55 @@
 
 
 
+    <div class="first-bar">
+        <div class="search-container">
+            <input type="text" placeholder="       Search over 5000+ AI...   " class="search-box">
+            <button type="submit" class="search-button"> <img src="https://cdn.iconscout.com/icon/free/png-512/free-search-icon-download-in-svg-png-gif-file-formats--feather-version-11-pack-user-interface-icons-434390.png?f=webp&w=256" alt=""></button>
+        </div>
+
+        <div class="media-icons">
+            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/x-social-media-round-icon-ai.webp" alt="X">
+            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/facebook-share-ai.webp" alt="Facebook">
+            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/linkedin-round-color-icon-3.webp" alt="LinkedIn">
+            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/telegram-icon-ai.webp" alt="Telegram">
+            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/email-round-solid-icon.webp" alt="Email">
+        </div>
+
+        <div class="category-dropdown">
+            <select class="categories-options">
+                <option value="" disabled selected>   ---select a category---    </option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </div>
+    </div>
+
+
+
     <div class="icon-section">
         <a href="" class="icon-heading" id="popular platforms:" target="_blank"><b>Popular platforms:</b></a>
-        <div class="icon-container">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/google-ai-2.webp" alt="Icon 1" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/openai-ai-logo-2.webp" alt="Icon 2" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/meta-ai-2.webp" alt="Icon 3" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/microsoft-ai-2.webp" alt="Icon 4" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/stability-ai-logo-2.webp" alt="Icon 5" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/deepmind-ai-logo-2.webp" alt="Icon 6" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/google-ai-2.webp" alt="Icon 7" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/openai-ai-logo-2.webp" alt="Icon 8" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/meta-ai-2.webp" alt="Icon 9" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/microsoft-ai-2.webp" alt="Icon 10" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/stability-ai-logo-2.webp" alt="Icon 11" class="icon">
-            <img src="https://www.aixploria.com/wp-content/uploads/2023/12/deepmind-ai-logo-2.webp" alt="Icon 12" class="icon">
+        <div class="icons">
+            <div class="icons-slide">
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/google-ai-2.webp" alt="Icon 1" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/openai-ai-logo-2.webp" alt="Icon 2" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/meta-ai-2.webp" alt="Icon 3" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/microsoft-ai-2.webp" alt="Icon 4" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/stability-ai-logo-2.webp" alt="Icon 5" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/deepmind-ai-logo-2.webp" alt="Icon 6" >
+            </div>
+            <div class="icons-slide">
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/google-ai-2.webp" alt="Icon 7" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/openai-ai-logo-2.webp" alt="Icon 8" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/meta-ai-2.webp" alt="Icon 9" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/microsoft-ai-2.webp" alt="Icon 10" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/stability-ai-logo-2.webp" alt="Icon 11" >
+                <img src="https://www.aixploria.com/wp-content/uploads/2023/12/deepmind-ai-logo-2.webp" alt="Icon 12" >
+            </div>
         </div>
+        
+            
+        
     </div>
     
 
